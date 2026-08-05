@@ -1,0 +1,3 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+@layer base { body { @apply bg-dragon-950 text-white antialiased; } }
+@layer components { .glass-panel { @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-xl; } .sovereign-glow { @apply shadow-[0_0_30px_rgba(34,197,94,0.15)]; } }

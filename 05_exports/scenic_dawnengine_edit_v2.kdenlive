@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mlt LC_NUMERIC="C" version="7.22.0" title="DawnEngine Scenic Reset">
+  <profile description="HD 1080p 25 fps" width="1920" height="1080" frame_rate_num="25" frame_rate_den="1" display_aspect_num="16" display_aspect_den="9" progressive="1" colorspace="709" />
+  <playlist id="main_bin">
+    <entry producer="producer_audio" />
+    <entry producer="producer_v_0" />
+    <entry producer="producer_v_1" />
+    <entry producer="producer_v_2" />
+    <entry producer="producer_v_3" />
+    <entry producer="producer_v_4" />
+    <entry producer="producer_v_5" />
+    <entry producer="producer_v_6" />
+    <entry producer="producer_v_7" />
+    <entry producer="producer_v_8" />
+    <entry producer="producer_v_9" />
+    <entry producer="producer_v_10" />
+    <entry producer="producer_v_11" />
+  </playlist>
+  <producer id="producer_audio" in_="0" out="9000">
+    <property name="resource">/home/tim/studio_project/01_raw_assets/audio/06.wav</property>
+    <property name="kdenlive:id">producer_audio</property>
+  </producer>
+  <producer id="producer_v_0" in_="0" out="100">
+    <property name="resource">/home/tim/studio_project/01_raw_assets/video/new4kpromo3.mp4</property>
+    <property name="kdenlive:id">producer_v_0</property>
+  </producer>
+  <producer id="producer_v_1" in_="0" out="100">
+    <property name="resource">/home/tim/studio_project/01_raw_assets/video/hi res gen FM.mp4</property>
+    <property name="kdenlive:id">producer_v_1</property>
+  </producer>
+  <producer id="producer_v_2" in_="0" out="100">
+    <property name="resource">/home/tim/studio_project/01_raw_assets/video/hi res gen FMlil22.mp4</property>
+    <property name="kdenlive:id">producer_v_2</property>
+  </producer>
+  <producer id="producer_v_3" in_="0" out="100">
+    <property name="resource">/home/tim/studio_project/01_raw_assets/video/dawnwalk.mp4</property>
+    <property name="kdenlive:id">producer_v_3</property>
+  </producer>
+  <producer id="producer_v_4" in_="0" out="100">
+    <property name="resource">/home/tim/studio_project/01_raw_assets/video/millazo.mp4</property>
+    <property name="kdenlive:id">producer_v_4</property>
+  </producer>
+  <producer id="producer_v_5" in_="0" out="100">
+    <property name="resource">/home/tim/studio_project/01_raw_assets/video/nu.mp4</property>
+    <property name="kdenlive:id">producer_v_5</property>
+  </producer>
+  <producer id="producer_v_6" in_="0" out="100">
+    <property name="resource">/home/tim/studio_project/01_raw_assets/video/hi res gen FMlil.mp4</property>
+    <property name="kdenlive:id">producer_v_6</property>
+  </producer>
+  <producer id="producer_v_7" in_="0" out="100">
+    <property name="resource">/home/tim/studio_project/01_raw_assets/video/river12.mp4</property>
+    <property name="kdenlive:id">producer_v_7</property>
+  </producer>
+  <producer id="producer_v_8" in_="0" out="100">
+    <property name="resource">/home/tim/studio_project/01_raw_assets/video/hi res corey.mp4</property>
+    <property name="kdenlive:id">producer_v_8</property>
+  </producer>
+  <producer id="producer_v_9" in_="0" out="100">
+    <property name="resource">/home/tim/studio_project/01_raw_assets/video/stpats.mp4</property>
+    <property name="kdenlive:id">producer_v_9</property>
+  </producer>
+  <producer id="producer_v_10" in_="0" out="100">
+    <property name="resource">/home/tim/studio_project/01_raw_assets/video/millazo2.mp4</property>
+    <property name="kdenlive:id">producer_v_10</property>
+  </producer>
+  <producer id="producer_v_11" in_="0" out="100">
+    <property name="resource">/home/tim/studio_project/01_raw_assets/video/dragon9newtube.mp4</property>
+    <property name="kdenlive:id">producer_v_11</property>
+  </producer>
+  <playlist id="playlist_video">
+    <entry producer="producer_v_0" in_="0" out="99" />
+    <entry producer="producer_v_1" in_="0" out="99" />
+    <entry producer="producer_v_2" in_="0" out="99" />
+    <entry producer="producer_v_3" in_="0" out="99" />
+    <entry producer="producer_v_4" in_="0" out="99" />
+    <entry producer="producer_v_5" in_="0" out="99" />
+    <entry producer="producer_v_6" in_="0" out="99" />
+    <entry producer="producer_v_7" in_="0" out="99" />
+    <entry producer="producer_v_8" in_="0" out="99" />
+    <entry producer="producer_v_9" in_="0" out="99" />
+    <entry producer="producer_v_10" in_="0" out="99" />
+    <entry producer="producer_v_11" in_="0" out="99" />
+  </playlist>
+  <playlist id="playlist_audio">
+    <entry producer="producer_audio" in_="0" out="8999" />
+  </playlist>
+  <tractor id="maintractor">
+    <multitrack>
+      <track producer="playlist_video" />
+      <track producer="playlist_audio" />
+    </multitrack>
+  </tractor>
+</mlt>
